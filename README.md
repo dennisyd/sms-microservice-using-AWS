@@ -1,10 +1,6 @@
 
 This is a microservice for sending SMS messages through API calls.
 
-This uses the aws/aws-sdk-php-laravel library to send SMS messages. No specific configuration is required on AWS for sending SMS messages through their system.
-However, the AWS Key and AWS Secret need to be set in the .env file for the given AWS account that is hosting this service. In production,
-this key pair should probably be set during deployment.
-
 Calls made to send SMS are made as follows:
 
 http://<hostname>/sendSMS/<json string>
